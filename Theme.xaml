@@ -90,7 +90,7 @@
                                 </StackPanel>
                             </Grid>
                         </Border>
-                        <Border Grid.RowSpan="2" Grid.Row="1" Background="White"/>
+                        <Border Grid.RowSpan="2" Grid.Row="1" Background="{TemplateBinding Background}"/>
                         <Border Grid.RowSpan="3" Grid.Row="1" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" Style="{StaticResource WindowContentBorderStyle}">
                             <AdornerDecorator>
                                 <ContentPresenter />
