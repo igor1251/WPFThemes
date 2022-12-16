@@ -33,5 +33,14 @@ namespace MacLikeUI
             var window = (Window)((FrameworkElement)sender).TemplatedParent;
             window.Close();
         }
+
+        private void PART_WindowHeader_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == System.Windows.Input.MouseButtonState.Pressed)
+            {
+                var window = (Window)((FrameworkElement)sender).TemplatedParent;
+                window.DragMove();
+            }
+        }
     }
 }
