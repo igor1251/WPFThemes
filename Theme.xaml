@@ -40,9 +40,19 @@
     </Style>
     <Style x:Key="WindowHeaderMinimizeButtonStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource WindowHeaderButtonStyleBase}">
         <Setter Property="Background" Value="Green"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}, Path=WindowStyle}" Value="ToolWindow">
+                <Setter Property="Visibility" Value="Hidden"/>
+            </DataTrigger>
+        </Style.Triggers>
     </Style>
     <Style x:Key="WindowHeaderMaximizeButtonStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource WindowHeaderButtonStyleBase}">
         <Setter Property="Background" Value="Orange"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}, Path=WindowStyle}" Value="ToolWindow">
+                <Setter Property="Visibility" Value="Hidden"/>
+            </DataTrigger>
+        </Style.Triggers>
     </Style>
     <Style x:Key="WindowStyle" TargetType="{x:Type Window}">
         <Setter Property="WindowChrome.WindowChrome">
@@ -55,7 +65,7 @@
                               UseAeroCaptionButtons="False"/>
             </Setter.Value>
         </Setter>
-        <Setter Property="BorderBrush" Value="#2d2d2d" />
+        <Setter Property="BorderBrush" Value="#2d2d2d"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Window}">
@@ -91,5 +101,10 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
+        <Style.Triggers>
+            <Trigger Property="WindowStyle" Value="ToolWindow">
+                <Setter Property="ResizeMode" Value="NoResize"/>
+            </Trigger>
+        </Style.Triggers>
     </Style>
 </ResourceDictionary>
