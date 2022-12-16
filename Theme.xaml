@@ -126,9 +126,20 @@
     </Style>
     <Style x:Key="RoundedButtonStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource FrameworkElementRoundedStyleBase}">
         <Setter Property="FontWeight" Value="DemiBold"/>
-        <Setter Property="Background" Value="#f2f2f2"/>
+        <Setter Property="Background" Value="#ecb3ff"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Padding" Value="10 0"/>
         <Setter Property="Height" Value="28"/>
+    </Style>
+    <Style x:Key="AcceptButtonStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource RoundedButtonStyle}">
+        <Setter Property="Background" Value="#b3ffb3"/>
+    </Style>
+    <Style x:Key="DeclineButtonStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource RoundedButtonStyle}">
+        <Setter Property="Background" Value="#ffb3b3"/>
+    </Style>
+    <Style x:Key="CancelButtonStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource RoundedButtonStyle}">
+        <Setter Property="Background" Value="#d1d1e0"/>
     </Style>
     <Style x:Key="RoundedTextBoxStyle" TargetType="{x:Type TextBox}" BasedOn="{StaticResource FrameworkElementRoundedStyleBase}">
         <Setter Property="Height" Value="28"/>
