@@ -3,5 +3,6 @@
     <Style x:Key="ComboBoxStyle" TargetType="{x:Type ComboBox}" BasedOn="{StaticResource FrameworkElementStyleBase}">
         <Setter Property="Height" Value="28"/>
         <Setter Property="IsReadOnly" Value="True"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
     </Style>
 </ResourceDictionary>
