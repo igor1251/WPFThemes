@@ -3,18 +3,4 @@
     <Style x:Key="FrameworkElementStyleBase" TargetType="{x:Type FrameworkElement}">
         <Setter Property="Margin" Value="3"/>
     </Style>
-    <Style x:Key="FrameworkElementRoundedStyleBase" TargetType="{x:Type FrameworkElement}" BasedOn="{StaticResource FrameworkElementStyleBase}">
-        <Style.Resources>
-            <Style TargetType="{x:Type Border}">
-                <Setter Property="CornerRadius" Value="6"/>
-            </Style>
-        </Style.Resources>
-    </Style>
-    <Style x:Key="FrameworkElementSmallRoundedStyleBase" TargetType="{x:Type FrameworkElement}" BasedOn="{StaticResource FrameworkElementStyleBase}">
-        <Style.Resources>
-            <Style TargetType="{x:Type Border}">
-                <Setter Property="CornerRadius" Value="3"/>
-            </Style>
-        </Style.Resources>
-    </Style>
 </ResourceDictionary>
