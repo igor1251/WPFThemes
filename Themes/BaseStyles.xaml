@@ -3,4 +3,7 @@
     <Style x:Key="FrameworkElementStyleBase" TargetType="{x:Type FrameworkElement}">
         <Setter Property="Margin" Value="3"/>
     </Style>
+    <Style TargetType="{x:Type Border}">
+        <Setter Property="CornerRadius" Value="3"/>
+    </Style>
 </ResourceDictionary>
