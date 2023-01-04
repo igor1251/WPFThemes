@@ -6,4 +6,7 @@
     <Style TargetType="{x:Type Border}">
         <Setter Property="CornerRadius" Value="3"/>
     </Style>
+    <Style TargetType="{x:Type TextBlock}">
+        <Setter Property="FontWeight" Value="DemiBold"/>
+    </Style>
 </ResourceDictionary>

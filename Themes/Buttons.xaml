@@ -7,40 +7,37 @@
         <Setter Property="Background">
             <Setter.Value>
                 <LinearGradientBrush StartPoint="0.5 0" EndPoint="0.5 1">
-                    <GradientStop Color="#e6e6e6" Offset="0.3"/>
-                    <GradientStop Color="#8c8c8c" Offset="1"/>
+                    <GradientStop Color="#f2f2f2" Offset="0.3"/>
+                    <GradientStop Color="#bfbfbf" Offset="1"/>
                 </LinearGradientBrush>
             </Setter.Value>
         </Setter>
     </Style>
     <Style x:Key="AcceptButtonStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonStyle}">
-        <Setter Property="Background">
+        <Setter Property="ContentTemplate">
             <Setter.Value>
-                <LinearGradientBrush StartPoint="0.5 0" EndPoint="0.5 1">
-                    <GradientStop Color="#ccffcc" Offset="0.3"/>
-                    <GradientStop Color="#009900" Offset="1"/>
-                </LinearGradientBrush>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Themes/Icons/accept.png" Margin="0 0 3.5 0" Width="16" Height="16"/>
+                        <ContentControl VerticalAlignment="Center" Content="{TemplateBinding Button.Content}"/>
+                    </StackPanel>
+                </DataTemplate>
             </Setter.Value>
         </Setter>
     </Style>
     <Style x:Key="DeclineButtonStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonStyle}">
-        <Setter Property="Background">
+        <Setter Property="ContentTemplate">
             <Setter.Value>
-                <LinearGradientBrush StartPoint="0.5 0" EndPoint="0.5 1">
-                    <GradientStop Color="#ffcccc" Offset="0.3"/>
-                    <GradientStop Color="#ff0000" Offset="1"/>
-                </LinearGradientBrush>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Themes/Icons/decline.png" Margin="0 0 3.5 0" Width="16" Height="16"/>
+                        <ContentControl VerticalAlignment="Center" Content="{TemplateBinding Button.Content}"/>
+                    </StackPanel>
+                </DataTemplate>
             </Setter.Value>
         </Setter>
     </Style>
     <Style x:Key="CancelButtonStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource ButtonStyle}">
-        <Setter Property="Background">
-            <Setter.Value>
-                <LinearGradientBrush StartPoint="0.5 0" EndPoint="0.5 1">
-                    <GradientStop Color="#cce6ff" Offset="0.3"/>
-                    <GradientStop Color="#0084ff" Offset="1"/>
-                </LinearGradientBrush>
-            </Setter.Value>
-        </Setter>
+        
     </Style>
 </ResourceDictionary>

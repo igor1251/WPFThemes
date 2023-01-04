@@ -105,9 +105,9 @@
                                 <Image Source="{TemplateBinding Icon}" Margin="3" VerticalAlignment="Center" HorizontalAlignment="Left" Height="20" Grid.Column="0"/>
                                 <TextBlock Text="{TemplateBinding Title}" Grid.Column="1" Style="{StaticResource WindowHeaderTextBlockStyle}"/>
                                 <StackPanel Grid.Column="2" HorizontalAlignment="Right" Orientation="Horizontal">
-                                    <Button x:Name="PART_MinimizeButton" Click="PART_MinimizeButton_Click" Style="{StaticResource WindowHeaderMinimizeButtonStyle}"/>
-                                    <Button x:Name="PART_MaximizeButton" Click="PART_MaximizeButton_Click" Style="{StaticResource WindowHeaderMaximizeButtonStyle}"/>
-                                    <Button x:Name="PART_CloseButton" Click="PART_CloseButton_Click" Style="{StaticResource WindowHeaderCloseButtonStyle}"/>
+                                    <Button x:Name="PART_MinimizeButton" Click="PART_MinimizeButton_Click" Grid.Column="1" Style="{StaticResource WindowHeaderMinimizeButtonStyle}"/>
+                                    <Button x:Name="PART_MaximizeButton" Click="PART_MaximizeButton_Click" Grid.Column="1" Style="{StaticResource WindowHeaderMaximizeButtonStyle}"/>
+                                    <Button x:Name="PART_CloseButton" Click="PART_CloseButton_Click" Grid.Column="1" Style="{StaticResource WindowHeaderCloseButtonStyle}"/>
                                 </StackPanel>
                             </Grid>
                         </Border>
@@ -142,7 +142,9 @@
                                 </Grid.ColumnDefinitions>
                                 <Image Source="{TemplateBinding Icon}" Margin="3" VerticalAlignment="Center" HorizontalAlignment="Left" Height="20" Grid.Column="0"/>
                                 <TextBlock Text="{TemplateBinding Title}" Grid.Column="1" Style="{StaticResource WindowHeaderTextBlockStyle}"/>
-                                <Button x:Name="PART_CloseButton" Grid.Column="2" HorizontalAlignment="Right" Click="PART_CloseButton_Click" Style="{StaticResource WindowHeaderCloseButtonStyle}"/>
+                                <StackPanel Grid.Column="1" Orientation="Horizontal">
+                                    <Button x:Name="PART_CloseButton" Click="PART_CloseButton_Click" Grid.Column="1" Style="{StaticResource WindowHeaderCloseButtonStyle}"/>
+                                </StackPanel>
                             </Grid>
                         </Border>
                         <Border Grid.Row="1" Style="{StaticResource WindowContentBorderStyle}">
