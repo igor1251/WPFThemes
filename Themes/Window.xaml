@@ -142,9 +142,7 @@
                                 </Grid.ColumnDefinitions>
                                 <Image Source="{TemplateBinding Icon}" Margin="3" VerticalAlignment="Center" HorizontalAlignment="Left" Height="20" Grid.Column="0"/>
                                 <TextBlock Text="{TemplateBinding Title}" Grid.Column="1" Style="{StaticResource WindowHeaderTextBlockStyle}"/>
-                                <StackPanel Grid.Column="1" Orientation="Horizontal">
-                                    <Button x:Name="PART_CloseButton" Click="PART_CloseButton_Click" Grid.Column="1" Style="{StaticResource WindowHeaderCloseButtonStyle}"/>
-                                </StackPanel>
+                                <Button x:Name="PART_CloseButton" Click="PART_CloseButton_Click" Grid.Column="2" HorizontalAlignment="Right" Style="{StaticResource WindowHeaderCloseButtonStyle}"/>
                             </Grid>
                         </Border>
                         <Border Grid.Row="1" Style="{StaticResource WindowContentBorderStyle}">
