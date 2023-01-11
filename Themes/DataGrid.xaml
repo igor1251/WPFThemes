@@ -1,0 +1,14 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="DataGridStyle" TargetType="{x:Type DataGrid}" BasedOn="{StaticResource FrameworkElementStyleBase}">
+        <Setter Property="AutoGenerateColumns" Value="False"/>
+        <Setter Property="CanUserAddRows" Value="False"/>
+        <Setter Property="CanUserDeleteRows" Value="False"/>
+        <Setter Property="HorizontalGridLinesBrush" Value="#b3b3b3"/>
+        <Setter Property="VerticalGridLinesBrush" Value="#b3b3b3"/>
+        <Setter Property="AlternatingRowBackground" Value="#f2f2f2"/>
+        <Setter Property="Background" Value="#ffffff"/>
+        <Setter Property="SelectionMode" Value="Single"/>
+        <Setter Property="SelectionUnit" Value="FullRow"/>
+    </Style>
+</ResourceDictionary>

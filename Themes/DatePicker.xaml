@@ -3,6 +3,5 @@
     <Style x:Key="DatePickerStyle" TargetType="{x:Type DatePicker}" BasedOn="{StaticResource FrameworkElementStyleBase}">
         <Setter Property="Height" Value="28"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
-        <Setter Property="FontWeight" Value="DemiBold"/>
     </Style>
 </ResourceDictionary>
